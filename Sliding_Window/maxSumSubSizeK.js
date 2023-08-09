@@ -8,9 +8,7 @@ function max_sub_array_of_size_k(k, arr) {
     for (let end = 0; end < arr.length; end++) {
         total += arr[end]
         if (end >= k-1) {
-            if (total > maxSum) {
-                maxSum = total
-            }
+            maxSum = Math.max(maxSum, total)
             total -= arr[start]
             start += 1
         }
