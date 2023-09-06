@@ -1,5 +1,4 @@
 const longest_substring_with_k_distinct = function(str, k) {
-    // TODO: Write your code here
     let distinctChars = {}
     let start = 0
     let maxSubstring = -1
