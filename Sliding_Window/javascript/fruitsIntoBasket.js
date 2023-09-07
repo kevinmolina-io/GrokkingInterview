@@ -6,6 +6,9 @@ const fruits_into_baskets = function(fruits) {
     // [A, B, C, A, C]
     //        S
     //                E 
+
+    // Time: O(N + N) -> O(N)
+    // Space: O(1) <- at max the basket can only hold 3 fruits
     let basket = {}
     let max_length = -1
     let start = 0
